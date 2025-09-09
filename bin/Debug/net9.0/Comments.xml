@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Comments</name>
+    </assembly>
+    <members>
+        <member name="T:Program">
+            <summary>
+            Author: skqu \n 
+            Date: 09-09-2025 \n 
+            Class Name: Program \n 
+            Description: This program demonstrates XML documentation comments in C#. \n 
+            </summary>
+        </member>
+        <member name="M:Program.Main(System.String[])">
+            <summary>
+            Author: skqu \n 
+            Date: 09-09-2025 \n 
+            Method name: Main \n
+            Description: The main entry point of the program. \n 
+            </summary>
+            <param name="args">Command line arguments.</param>
+            <returns>void</returns>
+            <exception >None</exception>
+        </member>
+        <member name="T:SampleClass">
+            <summary>
+            Author: skqu \n 
+            Date: 09-09-2025 \n 
+            Class Name: SampleClass \n 
+            Description: This is a sample class to demonstrate XML documentation comments. \n 
+            </summary>
+        </member>
+        <member name="F:SampleClass.myValue">
+            <summary>
+            Some important value.
+            </summary>
+        </member>
+        <member name="M:SampleClass.PrintString(System.String)">
+            <summary>
+            Author: skqu \n 
+            Date: 09-09-2025 \n 
+            Method name: PrintString \n 
+            Description: This method prints a string. \n 
+            </summary>
+            <param name="stringPrint">The string to print.</param>
+            <returns>true if printed, else false</returns>
+            <exception cref="T:System.Exception">Thrown if writing to console fails.</exception>
+        </member>
+    </members>
+</doc>
