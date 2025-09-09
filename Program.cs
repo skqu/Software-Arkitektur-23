@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices.Swift;
-
-/// <summary>
+﻿/// <summary>
 /// Author: skqu \n 
 /// Date: 09-09-2025 \n 
 /// Class Name: Program \n 
