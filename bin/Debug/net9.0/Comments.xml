@@ -25,27 +25,38 @@
         </member>
         <member name="T:SampleClass">
             <summary>
-            Author: skqu \n 
-            Date: 09-09-2025 \n 
-            Class Name: SampleClass \n 
-            Description: This is a sample class to demonstrate XML documentation comments. \n 
+            <para>Author: skqu </para>
+            <para>Date: 09-09-2025 </para> 
+            <para>Class Name: SampleClass </para>
+            <para>Description: This is a sample class to demonstrate XML documentation comments. </para> 
             </summary>
         </member>
         <member name="F:SampleClass.myValue">
             <summary>
-            Some important value.
+            <para> Description: Some important value.</para>
             </summary>
         </member>
         <member name="M:SampleClass.PrintString(System.String)">
             <summary>
-            Author: skqu \n 
-            Date: 09-09-2025 \n 
-            Method name: PrintString \n 
-            Description: This method prints a string. \n 
+            <para>Author: skqu </para>
+            <para>Date: 09-09-2025 </para>
+            <para>Method name: PrintString </para> 
+            <para>Description: This method prints a string. </para> 
             </summary>
             <param name="stringPrint">The string to print.</param>
             <returns>true if printed, else false</returns>
-            <exception cref="T:System.Exception">Thrown if writing to console fails.</exception>
+            <exception>None</exception>
+        </member>
+        <member name="M:SampleClass.getValue">
+            <summary>
+            <para>Author: skqu </para>
+            <para>Date: 09-09-2025 </para>
+            <para>Method name: getValue </para>
+            <para>Description: This method returns the value of myValue. </para>
+            </summary>
+            <param >None</param>
+            <returns>The value of myValue.</returns>
+            <exception>None</exception>
         </member>
     </members>
 </doc>

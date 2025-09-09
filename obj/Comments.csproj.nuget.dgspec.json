@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Comments\\Comments.csproj": {}
+    "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Software-Arkitektur-23\\Comments.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Comments\\Comments.csproj": {
+    "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Software-Arkitektur-23\\Comments.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Comments\\Comments.csproj",
+        "projectUniqueName": "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Software-Arkitektur-23\\Comments.csproj",
         "projectName": "Comments",
-        "projectPath": "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Comments\\Comments.csproj",
+        "projectPath": "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Software-Arkitektur-23\\Comments.csproj",
         "packagesPath": "C:\\Users\\SKQU\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Comments\\obj\\",
+        "outputPath": "C:\\Users\\SKQU\\OneDrive - IBA Erhvervsakademi Kolding\\Undervisning\\2025\\software arkitektur\\Software-Arkitektur-23\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SKQU\\AppData\\Roaming\\NuGet\\NuGet.Config"
