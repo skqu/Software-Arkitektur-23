@@ -12,6 +12,7 @@ class SampleClass
     /// <para> Description: Some important value.</para>
     /// </summary>
     private string myValue = "Value";
+    private string anotherValue = "AnotherValue";
 
     /// <summary>
     /// <para>Author: skqu </para>
