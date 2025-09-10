@@ -19,8 +19,8 @@ class SampleClass
     /// <para>Method name: PrintString </para> 
     /// <para>Description: This method prints a string. </para> 
     /// </summary>
-    /// <param name="stringPrint">The string to print.</param>
-    /// <returns>true if printed, else false</returns>
+    /// <param name="stringPrint">string: The string to print.</param>
+    /// <returns>bool: true if printed, else false</returns>
     /// <exception>None</exception>
     public bool PrintString(string stringPrint)
     {
@@ -36,7 +36,7 @@ class SampleClass
     /// <para>Description: This method returns the value of myValue. </para>
     /// </summary>
     /// <param >None</param>
-    /// <returns>The value of myValue.</returns>
+    /// <returns>string: The value of myValue.</returns>
     /// <exception>None</exception>
     public string getValue()
     {
