@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sampleclass_0',['SampleClass',['../class_sample_class.html',1,'']]],
-  ['software_20arkitektur_2023_1',['Software-Arkitektur-23',['../C:/Users/SKQU/OneDrive - IBA Erhvervsakademi Kolding/Undervisning/2025/software arkitektur/Software-Arkitektur-23/README.md#autotoc_md0',1,'']]],
-  ['subchapter_2',['Subchapter',['../C:/Users/SKQU/OneDrive - IBA Erhvervsakademi Kolding/Undervisning/2025/software arkitektur/Software-Arkitektur-23/README.md#autotoc_md1',1,'']]]
+  ['printstring_0',['PrintString',['../class_sample_class.html#ae8a3b36e30f35ef11c49df139975a54e',1,'SampleClass']]],
+  ['program_1',['Program',['../class_program.html',1,'']]]
 ];

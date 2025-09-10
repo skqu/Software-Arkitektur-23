@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['23_0',['Software-Arkitektur-23',['../C:/Users/SKQU/OneDrive - IBA Erhvervsakademi Kolding/Undervisning/2025/software arkitektur/Software-Arkitektur-23/README.md#autotoc_md0',1,'']]]
+  ['context_0',['Context',['../md__r_e_a_d_m_e.html#autotoc_md2',1,'']]]
 ];
