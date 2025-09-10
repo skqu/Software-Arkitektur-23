@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Comments</name>
+    </assembly>
+    <members>
+        <member name="T:Program">
+            <summary>
+            <para>Author: skqu </para> 
+            <para>Date: 09-09-2025 </para>
+            <para>Class Name: Program </para>
+            <para>Description: This program demonstrates XML documentation comments in C#. </para>
+            </summary>
+        </member>
+        <member name="M:Program.Main(System.String[])">
+            <summary>
+            <para>Author: skqu </para>
+            <para>Date: 09-09-2025 </para>
+            <para>Method name: Main </para>
+            <para>Description: The main entry point of the program. </para>
+            </summary>
+            <param name="args">Command line arguments.</param>
+            <returns>void</returns>
+            <exception >None</exception>
+        </member>
+        <member name="T:SampleClass">
+            <summary>
+            <para>Author: skqu </para>
+            <para>Date: 09-09-2025 </para> 
+            <para>Class Name: SampleClass </para>
+            <para>Description: This is a sample class to demonstrate XML documentation comments. </para> 
+            </summary>
+        </member>
+        <member name="F:SampleClass.myValue">
+            <summary>
+            <para> Description: Some important value.</para>
+            </summary>
+        </member>
+        <member name="M:SampleClass.PrintString(System.String)">
+            <summary>
+            <para>Author: skqu </para>
+            <para>Date: 09-09-2025 </para>
+            <para>Method name: PrintString </para> 
+            <para>Description: This method prints a string. </para> 
+            </summary>
+            <param name="stringPrint">string: The string to print.</param>
+            <returns>bool: true if printed, else false</returns>
+            <exception>None</exception>
+        </member>
+        <member name="M:SampleClass.getValue">
+            <summary>
+            <para>Author: skqu </para>
+            <para>Date: 09-09-2025 </para>
+            <para>Method name: getValue </para>
+            <para>Description: This method returns the value of myValue. </para>
+            <param >None</param>
+            </summary>
+            <returns>string: The value of myValue.</returns>
+            <exception>None</exception>
+        </member>
+    </members>
+</doc>
