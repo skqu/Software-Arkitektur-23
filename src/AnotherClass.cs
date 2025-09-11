@@ -31,5 +31,18 @@ namespace AnotherNamespace
 
             return _aliveVar;
         }
+
+        
+        /// <summary>
+        /// <para>Author: skqu </para>
+        /// <para>Date: 10-09-2025 </para>
+        /// <para>Method name: IsAlive </para>
+        /// <para>Description: This method checks if the object is alive. </para>
+        /// </summary>
+        /// <param name="var">Bool: true or false</param>
+        public void setAlive(bool var)
+        {
+            _aliveVar = var;
+        }
     }
 }

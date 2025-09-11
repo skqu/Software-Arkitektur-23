@@ -25,10 +25,10 @@ public sealed class Test1
     {
         /// Arrange
         AnotherClass anotherClass = new AnotherClass();
+        anotherClass.setAlive(false);
 
         /// Act
         bool result = anotherClass.IsAlive();
-        result = anotherClass.IsAlive();
 
         /// Assert
         Assert.IsTrue(result);
