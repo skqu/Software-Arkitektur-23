@@ -51,7 +51,7 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"skqu_Software-Arkitektur-23" /o:"skqu" /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
-          dotnet test --no-build -c Release \
+          dotnet test \
              --collect:"XPlat Code Coverage" \
              --results-directory ./test/TestResults
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
