@@ -13,7 +13,7 @@ class AnotherClass
     /// <para>Method name: IsAlive </para>
     /// <para>Description: This method checks if the object is alive. </para>
     /// </summary>
-    /// <returns></returns>
+    /// <returns name="aliveVar">bool: Return wether or not class is alive</returns>
     public bool IsAlive()
     {
         bool aliveVar = true;
