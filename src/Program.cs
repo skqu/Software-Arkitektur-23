@@ -1,5 +1,4 @@
-﻿using System.Xml.Serialization;
-using AnotherNamespace;
+﻿using AnotherNamespace;
 namespace Comments
 {
     /// <summary>

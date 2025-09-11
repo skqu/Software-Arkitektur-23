@@ -6,7 +6,7 @@ namespace AnotherNamespace
     /// <para>Class Name: AnotherClass </para>
     /// <para>Description: This is another sample class to demonstrate XML documentation comments. </para>
     /// </summary>
-    class AnotherClass
+    public class AnotherClass
     {
 
         private bool _aliveVar = true;
