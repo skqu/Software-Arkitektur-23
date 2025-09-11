@@ -12,12 +12,15 @@
     <PackageReference Include="MSTest" Version="3.6.4" />
   </ItemGroup>
 
+
+
   <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
   <ItemGroup>
      <ProjectReference Include="..\src\Comments.csproj" />
+     <PackageReference Include="coverlet.collector" Version="6.*" />
   </ItemGroup>
 
 </Project>
