@@ -44,13 +44,6 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"skqu_Software-Arkitektur-23" /o:"skqu" /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
           dotnet build
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
-      - name: Test and analyze
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        shell: powershell
-        run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"skqu_Software-Arkitektur-23" /o:"skqu" /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
           dotnet test "--collect:XPlat Code Coverage" --results-directory ".\test\TestResults"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
 
