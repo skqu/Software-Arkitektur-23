@@ -20,10 +20,7 @@ class Program
         SampleClass sample = new SampleClass();
         sample.PrintString("Hello, World!");
 
-
         // Show comments when looking for method info
         Console.WriteLine(sample.getValue());
-
-        string testVar = sample.getValue();
     }
 }
