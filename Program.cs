@@ -1,4 +1,6 @@
-﻿/// <summary>
+﻿using AnotherNamespace;
+
+/// <summary>
 /// <para>Author: skqu </para> 
 /// <para>Date: 09-09-2025 </para>
 /// <para>Class Name: Program </para>
@@ -17,11 +19,14 @@ class Program
     /// <exception >None</exception>
     static void Main(string[] args)
     {
+        AnotherClass anotherClass = new AnotherClass();
         SampleClass sample = new SampleClass();
         sample.PrintString("Hello, World!");
 
         // Show comments when looking for method info
         Console.WriteLine(sample.getValue());
+
+        Console.WriteLine(anotherClass.IsAlive());
 
     }
 }

@@ -8,6 +8,8 @@ namespace AnotherNamespace
     /// </summary>
     class AnotherClass
     {
+
+        private bool _aliveVar = true;
         /// <summary>
         /// <para>Author: skqu </para>
         /// <para>Date: 10-09-2025 </para>
@@ -17,18 +19,17 @@ namespace AnotherNamespace
         /// <returns name="aliveVar">bool: Return wether or not class is alive</returns>
         public bool IsAlive()
         {
-            bool aliveVar = true;
 
-            if (aliveVar)
+            if (_aliveVar)
             {
-                aliveVar = false;
+                _aliveVar = false;
             }
             else
             {
-                aliveVar = true;
+                _aliveVar = true;
             }
 
-            return aliveVar;
+            return _aliveVar;
         }
     }
 }
