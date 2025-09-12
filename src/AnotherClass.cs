@@ -6,7 +6,7 @@ namespace AnotherNamespace
     /// <para>Class Name: AnotherClass </para>
     /// <para>Description: This is another sample class to demonstrate XML documentation comments. </para>
     /// </summary>
-    class AnotherClass
+    public class AnotherClass
     {
 
         private bool _aliveVar = true;
@@ -30,6 +30,19 @@ namespace AnotherNamespace
             }
 
             return _aliveVar;
+        }
+
+        /// <summary>
+        /// <para>Author: skqu </para>
+        /// <para>Date: 12-09-2025 </para>
+        /// <para>Method name: changeAlive </para>
+        /// <para>Description: This method change if the object is alive. </para>
+        /// </summary>
+        /// <param name="alive">bool: If the object is alive</param>
+        /// <returns>void</returns>
+        public void changeAlive(bool alive)
+        {
+            _aliveVar = alive;
         }
     }
 }
