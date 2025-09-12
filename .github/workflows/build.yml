@@ -44,5 +44,5 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"skqu_Software-Arkitektur-23" /o:"skqu" /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
           dotnet 
-          dotnet test --no-build --collect:"XPlat Code Coverage;Format=opencover"
+          dotnet test "--collect:XPlat Code Coverage;Format=opencover" --results-directory ".\test\TestResults"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
