@@ -13,7 +13,7 @@ namespace Comments
         /// <summary>
         /// <para> Description: Some important value.</para>
         /// </summary>
-        private string myValue = "Value";
+        private string _myValue = "Value";
 
         /// <summary>
         /// <para>Author: skqu </para>
@@ -26,7 +26,7 @@ namespace Comments
         /// <exception>None</exception>
         public bool PrintString(string stringPrint)
         {
-            myValue = stringPrint;
+            _myValue = stringPrint;
             Console.WriteLine(stringPrint);
             return true;
         }
@@ -40,9 +40,10 @@ namespace Comments
         /// <param >None</param>
         /// <returns>string: The value of myValue.</returns>
         /// <exception>None</exception>
-        public string getValue()
+        public string myValue
         {
-            return myValue;
+            get => _myValue;
+            set => _myValue = value;
         }
     }
 }
