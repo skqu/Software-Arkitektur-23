@@ -1,48 +1,37 @@
-﻿using AnotherNamespace;
-namespace Comments
+namespace SoftwareArkitektur
 {
-    /// <summary>
-    /// <para>Author: skqu </para> 
-    /// <para>Date: 09-09-2025 </para>
-    /// <para>Class Name: Program </para>
-    /// <para>Description: This program demonstrates XML documentation comments in C#. </para>
-    /// </summary>
     class Program
     {
-        /// <summary>
-        /// <para>Author: skqu </para>
-        /// <para>Date: 11-09-2025 </para>
-        /// <para>Method name: Program </para>
-        /// <para>Description: Dummy constructor </para>
-        /// </summary>
-        /// <param>None</param>
-        /// <returns>void</returns>
-        /// <exception >None</exception>
-        protected Program()
+        public static void Main()
         {
             
-        }
+            var builder = WebApplication.CreateBuilder();
 
-        /// <summary>
-        /// <para>Author: skqu </para>
-        /// <para>Date: 09-09-2025 </para>
-        /// <para>Method name: Main </para>
-        /// <para>Description: The main entry point of the program. </para>
-        /// </summary>
-        /// <param name="args">Command line arguments.</param>
-        /// <returns>void</returns>
-        /// <exception >None</exception>
-        static void Main(string[] args)
-        {
-            AnotherClass anotherClass = new AnotherClass();
-            SampleClass sample = new SampleClass();
-            sample.PrintString("Hello, World!");
+            builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();   
+            builder.Services.AddSwaggerGen();         
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    policy => policy.AllowAnyOrigin()
+                                    .AllowAnyMethod()
+                                    .AllowAnyHeader());
+            });  
 
-            // Show comments when looking for method info
-            Console.WriteLine(sample.getValue());
+            var app = builder.Build();
 
-            Console.WriteLine(anotherClass.IsAlive());
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();                       
+                app.UseSwaggerUI();                      
+            }
+
+            app.UseCors("AllowAll");
+            app.MapControllers();
+
+            app.Run();
 
         }
     }
 }
+

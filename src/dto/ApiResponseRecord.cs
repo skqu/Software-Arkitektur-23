@@ -1,0 +1,1 @@
+public record ApiResponse(string Status, string Version, DateTime Timestamp);
