@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+	<meta charset=”UTF-8”>
+	<meta name=”viewport” content=”width-device-width, initial-scale=1.0”>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+	<title>The ultimator</title>
+</head>
+<body>	
+    <header>
+        <h1>Welcome to minimal viable product</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/graphql/">Graphql</a>
+        <a href="/restfull/">RestFULL</a>
+    </nav>
+    <main>
+        <section class="S1">
+            <article>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter your name" id="name" name="name" required>
+                <button type="submit" id="submitR">Create user</button>
+            </article>
+            <article class="buttons">
+                <button id="restfullbtnR">Get Data from RestFULL</button>
+                <button id="graphqlbtnR">Get Data from Graphql</button>
+                <span id="graphqlp"></span>
+            </article>
+        </section>
+        <section class="users">
+            <article>
+                <table id="usersTable" border="1">
+                <thead>
+                    <tr><th>ID</th><th>Name</th></tr>
+                </thead>
+                <tbody></tbody>
+                </table>
+            </article>
+        </section>
+        <aside>
+        </aside>
+    </main>
+    <footer>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html> 
+ 

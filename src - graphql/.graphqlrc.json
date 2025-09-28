@@ -1,0 +1,19 @@
+{
+    "schema": "schema.graphql", 
+    "documents": "**/*.graphql",
+    "extensions": {
+        "strawberryshake": {
+            "namespace": "Startrek.Graphql",
+            "records": {
+                "inputs": false, 
+                "entities": false
+            },
+            "transportProfiles": [
+                {
+                    "default": "Http", 
+                    "subscription": "WebSocket"
+                }
+            ]
+        }
+    }
+}

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Routes;
 
-[Route("api/v1")]
+[Route(ApiRoutes.V1)]
 [ApiController]
 public class V1Controller : ControllerBase
 {
