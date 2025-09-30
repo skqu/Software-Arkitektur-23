@@ -51,13 +51,15 @@ public sealed class User
 {
     public string Id { get; set; } = default!;
     public string Name { get; set; } = default!;
+    public string Uname { get; set; } = default!;
 }
 public sealed class UserType : ObjectGraphType<User>
 {
     public UserType()
     {
         Field(x => x.Id).Description("User id");
-        Field(x => x.Name).Description("User name");
+        Field(x => x.Name).Description("Users name");
+        Field(x => x.Uname).Description("User name");
     }
 }
 
@@ -79,9 +81,15 @@ public sealed class UserMutation : ObjectGraphType
         Field<UserType>(
             "createUser",
             arguments: new QueryArguments(
+                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "uname" },
                 new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "name" }
             ),
-            resolve: ctx => store.Add(ctx.GetArgument<string>("name"))
+            resolve: ctx =>
+            {
+                var uname = ctx.GetArgument<string>("uname");
+                var name = ctx.GetArgument<string>("name");
+                return store.Add(name, uname);
+            }
         );
     }
 }
@@ -91,15 +99,13 @@ public sealed class UserStore
     private readonly List<User> _users = new();
     private int _nextId = 1;
 
-    public User Add(string name)
+    public User Add(string name, string uname)
     {
-        lock (_users)
-        {
-            var u = new User { Id = _nextId.ToString(), Name = name };
-            _users.Add(u);
-            _nextId++;
-            return u;
-        }
+        var u = new User { Id = _nextId.ToString(), Name = name };
+        u.Uname = uname;
+        _users.Add(u);
+        _nextId++;
+        return u;
     }
 
     public IReadOnlyList<User> All()

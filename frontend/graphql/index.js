@@ -12,7 +12,7 @@ submit.addEventListener("click", () =>
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            query: `mutation { createUser(name: "${name}") { id name } }`
+            query: `mutation { createUser(name: "${name}", uname: "${name.substring(0,3)}") { id name uname} }`
         })
     })
     .then(response => response.json())
@@ -33,7 +33,7 @@ graphqlbtn.addEventListener("click", () => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      query: "{ users { id name } }"
+      query: "{ users { id name uname } }"
     })
   })
   .then(response => response.json())
