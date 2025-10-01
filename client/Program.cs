@@ -2,6 +2,7 @@
 using System.Text;
 using System.Text.Json;
 
+string serviceName = "client";
 var serverUrl = "ws://localhost:5000/ws?name=Client";
 
 var jsonOpts = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
