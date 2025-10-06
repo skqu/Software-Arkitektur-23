@@ -30,7 +30,7 @@ class Program
             await mqttClient.SubscribeAsync("test/topic");
 
             // Publish
-            var messageText = "Hello from C#!";
+            var messageText = "{key: value}";
             while (messageText != "q")
             {
                 messageText = Console.ReadLine();
